@@ -10,6 +10,7 @@ import "./projects.css";
 import word from "../../assets/word.jpg";
 import sunset from "../../assets/sunset.jpg";
 import night from "../../assets/night.jpg";
+
 const Projects = () => {
   const PROJECTS = [
     [
@@ -61,3 +62,24 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export const Persona = () => {
+  return (
+    <div
+      className="mx-auto bg-image"
+      style={{
+        height: "50vh",
+        backgroundImage:
+          "url(https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      }}
+    >
+      <div className="h-100 mask d-grid" style={{ backgroundColor: "hsla(0, 0%, 0%, 0.5", placeItems: "center" }}>
+        <p className="text-white text-center display-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cum
+          laborum laboriosam eum voluptatum necessitatibus illo, consequatur
+          aperiam eius asperiores!
+        </p>
+      </div>
+    </div>
+  );
+};

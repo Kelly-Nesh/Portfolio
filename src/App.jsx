@@ -4,7 +4,7 @@ import Landing from "./components/Landing/Landing";
 import Footer from "./components/Footer/Footer";
 import { createBrowserRouter } from "react-router-dom";
 import Projects from "./components/Projects/Projects";
-
+import { Persona } from "./components/Projects/Projects";
 function App() {
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
         <div className="container">
           <Projects />
         </div>
+        <Persona />
       </main>
       <Footer />
     </>
