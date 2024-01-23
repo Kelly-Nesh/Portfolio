@@ -1,2 +1,2 @@
 # Kelly-Nesh
->Building a new portfolio websiste. Coming soon. . :)
+>Building a new portfolio websiste. Coming soon. :)
