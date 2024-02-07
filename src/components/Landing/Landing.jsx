@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import "./landing.css";
 
 const Landing = () => {
+  const ref = useRef();
   return (
     <div
       className="vh-100 bg-image"
@@ -12,13 +14,13 @@ const Landing = () => {
     >
       <div className="mask" style={{ backgroundColor: "hsla(0, 0%, 0%, 0.5)" }}>
         <div className="container d-flex justify-content-center align-items-center h-100">
-          <div className="text-white text-center">
-            <h1 className="mb-2 text-start display-5">Kelly Munene</h1>
-            <h4 className="mb-4 display-2">Software Engineer</h4>
+          <div className="text-color landing-text">
+            <h1 className="mb-2 display-5 name">Kelly Munene</h1>
+            <h4 className="mb-4 display-2 title-font">Software Engineer</h4>
             <Link
               to="#contact"
               data-mdb-ripple-init
-              className="text-white btn btn-rounded btn-md  btn-outline-secondary"
+              className="text-color btn btn-rounded btn-md  btn-outline-secondary"
               role="button"
               style={{
                 fontSize: "medium",
@@ -30,13 +32,17 @@ const Landing = () => {
             </Link>
           </div>
           <div className="position-absolute" style={{ bottom: "1rem" }}>
-            <Link
-              to="#about"
+            <span
+              to="#projects"
               data-mdb-ripple-init
-              className="text-white display-6"
+              className="text-color display-6"
+              ref={ref}
+              onClick={() => {
+                ref.current.scrollIntoView();
+              }}
             >
-              <i class="fas fa-angle-down mt-3 d-block text-center"></i>
-            </Link>
+              <i className="fas fa-angle-down mt-3 d-block text-center"></i>
+            </span>
           </div>
         </div>
       </div>
