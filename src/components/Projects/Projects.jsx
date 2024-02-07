@@ -30,14 +30,14 @@ const Projects = () => {
     ],
   ];
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="projects">
       <div className="row py-3">
         {PROJECTS.map(([name, image, text]) => {
           return (
-            <div className="col-md-6 col-lg-4 bg-tertiary my-5 mb-3">
+            <div className="col-md-6 col-lg-4 bg-tertiary my-5 mb-3" key={name}>
               <MDBCard
                 className="bg-transparent"
-                style={{ border: "1px solid white" }}
+                style={{ border: "1px solid #464b4e" }}
               >
                 <MDBCardImage
                   src={image}
