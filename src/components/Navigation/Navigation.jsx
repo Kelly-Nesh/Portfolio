@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   MDBContainer,
   MDBNavbar,
@@ -18,10 +18,8 @@ const Navigation = () => {
   return (
     <MDBNavbar expand="md" dark bgColor="dark-secondary" className="fixed-top">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">
-          <Link to="https://github.com/Kelly-Nesh" className='text-white'>
-            <i class="fab fa-github"></i> Nesh
-          </Link>
+        <MDBNavbarBrand href="https://github.com/Kelly-Nesh">
+          <i className="fab fa-github"></i> Nesh
         </MDBNavbarBrand>
         <MDBNavbarToggler
           aria-expanded="false"
@@ -42,6 +40,6 @@ const Navigation = () => {
       </MDBContainer>
     </MDBNavbar>
   );
-}
+};
 
 export default Navigation;
