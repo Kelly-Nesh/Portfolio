@@ -3,12 +3,19 @@ import { Link } from "react-router-dom";
 import "./footer.css";
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div className="d-flex justify-content-center py-3">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="far fa-envelope"></i>
-        <i class="fas fa-phone"></i>
+        <i className="fab fa-github"></i>
+        <i className="fab fa-linkedin-in"></i>
+        <i className="far fa-envelope"></i>
+        <i
+          role="button"
+          className="fas fa-phone"
+          onClick={async () => {
+            await navigator.clipboard.writeText("+254115510325");
+            alert("Phone number copied!");
+          }}
+        ></i>
       </div>
       <div className="d-flex justify-content-center py-3">
         <span>
