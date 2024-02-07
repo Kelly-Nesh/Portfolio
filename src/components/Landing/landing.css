@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Kalam:wght@300&display=swap");
+
+.title-font {
+  font-family: "Cinzel", serif;
+  font-size: 45px;
+}
+.name {
+  font-family: "Kalam", cursive;
+}
+.text-color {
+  color: #e8e6e3;
+}
+@media screen and (max-width: 576px) {
+  .landing-text {
+    text-align: center;
+  }
+}
