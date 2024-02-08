@@ -32,7 +32,7 @@ const Projects = () => {
     ],
   ];
   return (
-    <div className="row pr-row py-3">
+    <div className="row pr-row py-3" id="projects">
       {PROJECTS.map(([name, image, text]) => {
         return (
           <div className="col-sm-6 col-lg-4 my-5 mb-3 project-col" key={name}>
