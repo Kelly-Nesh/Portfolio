@@ -1,7 +1,10 @@
 footer div {
-    gap: 1rem
-    
+  gap: 1rem;
 }
-footer i {
-    font-size: larger
+footer div a {
+  color: #dac7a8;
+}
+
+footer div a i {
+  font-size: larger;
 }
