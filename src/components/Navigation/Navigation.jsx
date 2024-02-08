@@ -24,7 +24,7 @@ const Navigation = () => {
     >
       <MDBContainer fluid>
         <MDBNavbarBrand href="https://github.com/Kelly-Nesh">
-          <i className="fab fa-github"></i> Nesh
+          <i className="fab fa-github" /> &nbsp;Nesh
         </MDBNavbarBrand>
         <MDBNavbarToggler
           aria-expanded="false"
