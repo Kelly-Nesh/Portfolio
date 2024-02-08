@@ -29,7 +29,7 @@ const Landing = () => {
               className="c-button mx-auto btn btn-rounded btn-md btn-outline-secondary"
               style={{
                 fontSize: "medium",
-                background: "rgba(0, 0, 0, 0.7",
+                background: "rgba(0, 0, 0, 0.7)",
                 width: "10rem",
                 color: "#b6b0a6",
               }}
