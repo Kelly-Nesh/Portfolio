@@ -20,7 +20,7 @@ const Footer = () => {
           <i className="fab fa-linkedin-in" />
         </Link>
         <Link
-          to="mailto=munenekelly001@gmail.com"
+          to="mailto:munenekelly001@gmail.com"
           className="text-decoration-none"
         >
           <i className="far fa-envelope" />
