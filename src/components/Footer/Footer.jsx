@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const Footer = () => {
   return (
     <footer id="contact">
@@ -23,14 +25,12 @@ const Footer = () => {
         >
           <i className="far fa-envelope" />
         </Link>
-        <i
-          role="button"
-          className="fas fa-phone"
-          onClick={async () => {
-            await navigator.clipboard.writeText("+254115510325");
-            alert("Phone number copied!");
-          }}
-        ></i>
+        <CopyToClipboard
+          text="+254115510325"
+          onCopy={() => alert("Phone number copied to clipboard.")}
+        >
+          <i className="fas fa-phone"></i>
+        </CopyToClipboard>
       </div>
       <div className="d-flex justify-content-center py-3">
         <span>
