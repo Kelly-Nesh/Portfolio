@@ -7,16 +7,21 @@ import {
   MDBNavbarNav,
   MDBNavbarLink,
   MDBIcon,
-  MDBCollapse
-} from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
+  MDBCollapse,
+} from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
-    // Main navigation
+  // Main navigation
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <MDBNavbar expand="md" dark bgColor="dark-secondary" className="fixed-top">
+    <MDBNavbar
+      expand="md"
+      dark
+      className="fixed-top"
+      style={{ backdropFilter: "blur(3px)", background: "rgba(0, 0, 0, 0.2)" }}
+    >
       <MDBContainer fluid>
         <MDBNavbarBrand href="https://github.com/Kelly-Nesh">
           <i className="fab fa-github"></i> Nesh
@@ -33,8 +38,12 @@ const Navigation = () => {
             <MDBNavbarLink active aria-current="page" href="#">
               Home
             </MDBNavbarLink>
-            <MDBNavbarLink href="#projects">Projects</MDBNavbarLink>
-            <MDBNavbarLink href="#contact">Contact</MDBNavbarLink>
+            <MDBNavbarLink active href="#projects">
+              Projects
+            </MDBNavbarLink>
+            <MDBNavbarLink active href="#contact">
+              Contact
+            </MDBNavbarLink>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
