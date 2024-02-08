@@ -5,7 +5,8 @@ import Footer from "./components/Footer/Footer";
 import { createBrowserRouter } from "react-router-dom";
 import Projects from "./components/Projects/Projects";
 import { Persona } from "./components/Projects/Projects";
-import { Parallax } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { picsum } from "./components/Landing/Landing";
 
 function App() {
   return (
@@ -14,20 +15,15 @@ function App() {
         <Navigation />
         <Landing />
       </header>
-      <Parallax
-        translateX={["-100%", "0%"]}
-        rootMargin={{ top: 100, bottom: 100 }}
-        scale={[0.75, 1]}
-        easing="ease"
+      <Persona />
+      <ParallaxBanner
+        className="bg-image aspect-[2/1]"
+        style={{ height: "max-contents" }}
       >
-        <h1 className="text-center">Welcome to my website</h1>
-      </Parallax>
-      <main>
-        <div className="container">
+        <div className="container-fluid">
           <Projects />
         </div>
-        <Persona />
-      </main>
+      </ParallaxBanner>
       <Footer />
     </>
   );
