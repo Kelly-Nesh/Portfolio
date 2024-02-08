@@ -70,7 +70,7 @@ export const Persona = () => {
         <div
           className="h-100 d-flex flex-wrap p-3 gap-2 persona"
           style={{
-            backgroundColor: "hsla(0, 0%, 0%, 0.5",
+            backgroundColor: "#181a1b",
             placeItems: "center",
           }}
         >
