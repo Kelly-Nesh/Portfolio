@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 
+.persona {
+  place-items: center;
+}
+.persona p {
+  display: inline-block;
+  box-shadow: 0 0 5px 0 lightslategray;
+  padding: 2rem;
+  color: #b6b0a6;
+}
+#projects {
+  background-position: top;
+  background-size: contain;
+}
+.pr-row {
+  background: hsla(0, 0, 0%, 0.3);
+}
+
 .word {
   font-family: "M PLUS 1p", sans-serif;
+}
+
+.project-card {
+  background-color: #000000c9;
+}
+
+@media screen and (min-wdith: 576px) {
+  .persona p {
+    flex-basis: 50%;
+  }
 }
