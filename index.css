@@ -1,28 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Kalam:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 a {
   text-decoration: none;
+  color: #012425;
 }
 img {
   width: 100%;
 }
-/* Head */
-.landing {
-  background-image: url("https://picsum.photos/id/123/2500");
-  background-size: cover;
+/* header */
+header {
+  height: 85vh;
+  background-image: url("https://leetech.top/wp-content/uploads/2024/03/IMG_1219-1-scaled.jpg");
   background-repeat: no-repeat;
-  height: 60vh;
-  color: white;
-  place-items: center;
+  background-size: cover;
+  background-position: center;
 }
-.mask {
-  position: absolute;
-  background-color: hsla(0, 0%, 10%, 0.3);
+.landing-text {
+  position: relative;
+  top: 150px;
+  margin-left: 1em;
+  color: #fefefe;
+  text-transform: uppercase;
+}
+.landing-text small {
+  text-transform: capitalize;
+}
+.landing-text h1 {
+  font-size: 3em;
+  font-family: "Cinzel" sans-serif;
+}
+.landing-text div div {
+  width: max-content;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+}
+.landing-text div div a {
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+.landing-text div div:first-of-type {
+  border: 1px solid #cd9a00;
+}
+.landing-text div div:first-of-type:hover {
+  background-color: #cd9a00 !important;
+}
+.landing-text div div:first-of-type:hover a {
+  color: white;
+}
+.landing-text div div:last-of-type {
+  background-color: #cd9a00;
+}
+.landing-text div div:last-of-type a {
+  color: white;
+}
+.landing-text div div:last-of-type:hover {
+  background-color: black !important;
 }
 .job img {
   aspect-ratio: 4/3;
@@ -42,26 +79,30 @@ img {
   transition: all 0.2s;
 }
 .skill:hover {
-  /* transform: scale(1.01); */
-  transform: translateY(1px);
-    box-shadow: 0px 0px 7px 0px rgba(53, 53, 53, 0.5);
-
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 7px 0px rgba(53, 53, 53, 0.5);
 }
 .skill-name {
   text-align: center;
 }
 .skill-bar {
-  inset:0;
+  inset: 0;
   position: absolute;
   z-index: -1;
 }
 .skill-img img {
-	aspect-ratio: 1;
-	object-fit: contain;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 @media (min-width: 576px) {
   .col-sm-6 {
     flex: 0 0 auto;
     width: 48%;
+  }
+  header {
+    height: 100vh;
+  }
+  .landing-text {
+    margin-left: 2em;
   }
 }
