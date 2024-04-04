@@ -101,9 +101,29 @@ header {
   aspect-ratio: 1;
   object-fit: contain;
 }
-.memes div {
-  flex-basis: 300px;
+footer div.h4 a {
+  box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.4);
+  padding: 5px;
+  border-radius: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  text-align: center;
 }
+footer div a i {
+  display: inline-block;
+  margin: auto;
+  vertical-align: middle;
+}
+footer div a:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 3px 3px 3px rgba(128, 128, 128, 0.5);
+}
+footer div a:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
 @media (max-width: 576px) {
   .col-6.skill {
     width: 41%;
@@ -122,7 +142,7 @@ header {
   }
 }
 @media (min-width: 992px) {
-
   .job.col-md-4 {
     width: 32%;
-  }}
+  }
+}
