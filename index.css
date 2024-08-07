@@ -25,6 +25,9 @@ header hr {
   width: 100%;
   left: 0;
 }
+.icon {
+  width: 25px;
+}
 .nav-brand {
   width: 40%;
   vertical-align: middle;
@@ -53,7 +56,14 @@ div.spacer {
   text-align: center;
   bottom: 1em;
   color: #fff;
-
+}
+.know .icon {
+  width: 70px;
+  aspect-ratio: 1;
+}
+.know .d-flex .icon {
+  width: 35px;
+  height: 35px;
 }
 footer div.h4 a {
   box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.4);
