@@ -65,6 +65,33 @@ div.spacer {
   width: 35px;
   height: 35px;
 }
+.project {
+  margin-bottom: 2em;
+  position: relative;
+}
+#work .row .col-4:nth-child(2) {
+  align-self: center;
+}
+.project img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.project .pr-name {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.project:hover .pr-name {
+  opacity: 1;
+}
 footer div.h4 a {
   box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.4);
   padding: 5px;
