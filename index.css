@@ -13,6 +13,16 @@ body {
   font-family: Kalam, serif;
   background-color: #1e1e28;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
 .bg-1 {
   background: #191923;
 }
@@ -100,7 +110,7 @@ div.spacer {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  gap: 3em;
+  gap: 5em;
   margin-right: -30px;
 }
 .about.heading h2 {
@@ -158,24 +168,37 @@ hr.divider {
 /* ================================================================= */
 /* Footer */
 footer div.h4 a {
-  box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.4);
+  border: 1px solid rgba(222, 196, 0, 0.5);
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 50%;
   display: inline-block;
   width: 40px;
-  height: 36px;
+  height: 40px;
   text-align: center;
+  margin: 5px;
 }
 footer div a i {
   display: inline-block;
   margin: auto;
   vertical-align: middle;
 }
+footer div a {
+  transition: all 0.3s ease;
+}
 footer div a:hover {
   transform: translateY(-3px);
-  box-shadow: 2px 3px 3px 3px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(222, 196, 0, 0.5);
 }
 footer div a:active {
   box-shadow: none;
   transform: translateY(3px);
+}
+
+@media screen and (max-width: 768px) {
+  .intro .row div:nth-child(2) {
+    order: -1;
+  }
+  section#work .row div:nth-child(2) {
+    order: 1;
+  }
 }
