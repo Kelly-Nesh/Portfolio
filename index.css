@@ -75,6 +75,20 @@ div.spacer {
   width: 70px;
   aspect-ratio: 1;
 }
+.know.d-flex {
+  border: 1px solid rgba(222, 196, 0, 0.3);
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: all 0.7s;
+}
+
+.know.d-flex:hover {
+  border: 1px solid rgba(222, 196, 0, 0.9);
+  backdrop-filter: invert(1%);
+  box-shadow: 0px 0px 10px 0px rgba(222, 196, 0, 0.5);
+}
 .know .d-flex .icon {
   width: 35px;
   height: 35px;
@@ -102,6 +116,10 @@ div.spacer {
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 250px;
+}
+hr.divider {
+  border-color: #dec400;
+  opacity: 0.5;
 }
 /* ================================================================= */
 /* Work section */
