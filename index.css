@@ -6,18 +6,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: whitesmoke;
 }
 body {
-  font-family: Roboto, sans-serif;
+  /* font-family: Roboto, sans-serif; */
+  font-family: Kalam, serif;
+  background-color: #1e1e28;
+}
+.bg-1 {
+  background: #191923;
+}
+.bg-2 {
+  background-color: #1e1e28;
 }
 a {
   text-decoration: none;
-  color: #012425;
+  color: #dec400;
 }
 img {
   width: 100%;
 }
-/* header */
+
+/* ================================================================= */
+/* Header section */
 header {
   min-height: 85vh;
 }
@@ -57,6 +68,9 @@ div.spacer {
   bottom: 1em;
   color: #fff;
 }
+
+/* ================================================================= */
+/* Knowledge section */
 .know .icon {
   width: 70px;
   aspect-ratio: 1;
@@ -65,6 +79,32 @@ div.spacer {
   width: 35px;
   height: 35px;
 }
+
+/* ================================================================= */
+/* About section */
+.about.heading {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 3em;
+  margin-right: -30px;
+}
+.about.heading h2 {
+  transform: rotateZ(270deg);
+  margin: 0;
+}
+.about.pic {
+  display: flex;
+  align-items: center;
+}
+.about.pic img {
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 250px;
+}
+/* ================================================================= */
+/* Work section */
 .project {
   margin-bottom: 2em;
   position: relative;
@@ -92,6 +132,9 @@ div.spacer {
 .project:hover .pr-name {
   opacity: 1;
 }
+
+/* ================================================================= */
+/* Footer */
 footer div.h4 a {
   box-shadow: 0px 3px 3px 3px rgba(128, 128, 128, 0.4);
   padding: 5px;
