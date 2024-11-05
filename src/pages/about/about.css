@@ -1,0 +1,22 @@
+.about.heading {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 5em;
+    margin-right: -30px;
+  }
+  .about.heading h2 {
+    transform: rotateZ(270deg);
+    margin: 0;
+  }
+  .about.pic {
+    display: flex;
+    align-items: center;
+  }
+  .about.pic img {
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 250px;
+  }
+  

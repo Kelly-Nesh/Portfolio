@@ -1,0 +1,8 @@
+hr.divider {
+    border-color: #dec400;
+    opacity: 0.5;
+}
+
+div.spacer {
+    margin: 4em;
+}
