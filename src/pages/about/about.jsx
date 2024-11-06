@@ -17,7 +17,6 @@ export function About() {
         </div>
         <Divider className="d-sm-none" />
         <div className="">
-          <p>My name is Kelly Munene.</p>
           <p>
             Ever since I was little, I've been into computers. That early spark
             eventually blossomed into a love for coding late 2022. Now it's more

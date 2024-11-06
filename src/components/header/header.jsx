@@ -92,7 +92,7 @@ export function Header() {
           <div className="col-sm-6 col-md-4 text-sm-end">
             <div>
               <p>
-                Hey there👋! Kelly&apos;s an enthusiastic Software Engineer
+                Hey there👋! And welcome to my site. My name is Kelly Munene; an enthusiastic Software Engineer
                 experienced in designing and developing software
                 solutions using Python and other programming languages. Actively seeking for opportunities to expand my knowledge base
                 through personal projects and ongoing learning initiatives.
