@@ -2,6 +2,10 @@ header hr {
     width: 100%;
     left: 0;
   }
+  div.contact span a img.icon {
+    width: 16px;
+    aspect-ratio: 1;
+  }
   .nav-brand {
     width: 40%;
     vertical-align: middle;

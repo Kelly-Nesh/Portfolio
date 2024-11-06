@@ -3,6 +3,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Spacer } from "../../components/spacer_divider/spacer"
 import me from "/src/assets/me.jpg"
+import gm from "/src/assets/icons/gmail.png"
+
 
 export function Header() {
   return (
@@ -17,7 +19,7 @@ export function Header() {
           </span>
           <span className="px-2 py-1">
             <a href="mailto:munenekelly001@gmail.com">
-              <SiGmail className="me-1"/>
+              <img src={gm} className="icon me-1"/>
               munenekelly001@gmail.com
             </a>
           </span>
