@@ -82,9 +82,8 @@ export function Header() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="center-img position-relative d-flex flex-column align-items-center">
-              <img src={me} alt="photo of kelly" />
-              <h3 className="position-absolute text-uppercase name">Kelly</h3>
+            <div className="center-img">
+              <img src={me} alt="photo of kelly" className="img-border"/>
             </div>
           </div>
           <div className="pb-3 d-sm-none">

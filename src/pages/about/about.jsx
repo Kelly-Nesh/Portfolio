@@ -12,12 +12,12 @@ export function About() {
             <h2>Kelly</h2>
           </div>
           <div className="about pic ">
-            <img src={me2} alt="photo of kelly munene" className="rounded-pill"/>
+            <img src={me2} alt="photo of kelly munene" className="rounded-pill img-border"/>
           </div>
         </div>
         <Divider className="d-sm-none" />
         <div className="">
-          <p>Full name? Kelly Munene; Career? Software developer.</p>
+          <p>My name is Kelly Munene.</p>
           <p>
             Ever since I was little, I've been into computers. That early spark
             eventually blossomed into a love for coding late 2022. Now it's more
