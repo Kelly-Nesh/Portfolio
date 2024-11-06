@@ -12,16 +12,15 @@ import { SiGmail } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
 export function Footer() {
   return (
-    <footer id="footer" className="mt-sm-3 p-3">
-      <section id="contact" className="row mb-3">
-        <div className="col-sm-9">
-          <h3>Let's make something together</h3>
-          <h3>Start a conversation</h3>
+    <footer id="footer" className="p-3 pt-0">
+      <section id="contact" className="mb-3 text-center">
+        <div className="">
+          <h5>Let's make something great together</h5>
         </div>
-        <div className="col-sm-3 text-center text-sm-end">
+        <div className="">
           <a
             href="mailto:cs.kelly.nesh@gmail.com?subject=Let's talk"
-            className="btn btn-success text-capitalize"
+            className="btn btn-primary text-capitalize"
           >
             contact me
           </a>
