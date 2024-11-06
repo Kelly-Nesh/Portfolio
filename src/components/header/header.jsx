@@ -1,27 +1,23 @@
 import "./header.css";
+import { FaPhoneAlt } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { Spacer } from "../../components/spacer_divider/spacer"
+import me from "/src/assets/me.jpg"
 
-function Header() {
+export function Header() {
   return (
     <header className="">
       <div className="contact">
         <div className="py-1">
           <span className="px-2 py-1">
             <a href="tel:+254115510325">
-              <img
-                className="icon me-1"
-                src="assets/icons/phone.png"
-                loading="lazy"
-              ></img>
+              <FaPhoneAlt className="mx-1"/>
               +254115510325
             </a>
           </span>
           <span className="px-2 py-1">
             <a href="mailto:munenekelly001@gmail.com">
-              <img
-                className="icon me-1"
-                src="assets/icons/gmail.png"
-                loading="lazy"
-              ></img>
+              <SiGmail className="me-1"/>
               munenekelly001@gmail.com
             </a>
           </span>
@@ -31,12 +27,12 @@ function Header() {
       <nav className="py-1 px-2">
         <div className="nav-brand d-inline-block">
           <h2>
-            <a href="">Leetech</a>
+            <a href="/">Leetech</a>
           </h2>
         </div>
         <div className="nav-links d-inline-block">
           <span>
-            <a href="/#">Home</a>
+            <a href="#">Home</a>
           </span>
           <span>
             <a href="#about">About</a>
@@ -49,15 +45,14 @@ function Header() {
           </span>
         </div>
       </nav>
-      <div className="spacer"></div>
       <div className="intro">
         <div className="row align-items-center">
           <div className="col-sm-6 col-md-4">
-            <div className="spacer d-sm-none"></div>
+            <Spacer className="d-sm-none"/>
             <div className="header-details">
               <div>
                 <h3>Expertise</h3>
-                <p>Full&dash;Stack Web Development</p>
+                <p>Full - stack Web Development</p>
               </div>
               <div>
                 <h3>Education</h3>
@@ -86,7 +81,7 @@ function Header() {
           </div>
           <div className="col-md-4">
             <div className="center-img position-relative d-flex flex-column align-items-center">
-              <img src="assets/me.jpg" alt="photo of kelly" />
+              <img src={me} alt="photo of kelly" />
               <h3 className="position-absolute text-uppercase name">Kelly</h3>
             </div>
           </div>
@@ -96,10 +91,9 @@ function Header() {
           <div className="col-sm-6 col-md-4 text-sm-end">
             <div>
               <p>
-                Hey there👋! I&apos;m Kelly. An enthusiastic Software Engineer
-                experienced in designing and developing innovative software
-                solutions using Python and other programming languages. I&apos;m
-                actively seeking for opportunities to expand my knowledge base
+                Hey there👋! Kelly&apos;s an enthusiastic Software Engineer
+                experienced in designing and developing software
+                solutions using Python and other programming languages. Actively seeking for opportunities to expand my knowledge base
                 through personal projects and ongoing learning initiatives.
               </p>
               <a

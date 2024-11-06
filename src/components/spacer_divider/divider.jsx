@@ -1,3 +1,4 @@
+import "./divider_spacer.css";
 import { Spacer } from "./spacer";
 
 export function Divider({ className = "" }) {

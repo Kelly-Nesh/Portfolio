@@ -35,95 +35,28 @@ img {
   width: 100%;
 }
 
-/* ================================================================= */
-/* Header section */
-header hr {
-  width: 100%;
-  left: 0;
-}
-.icon {
-  width: 25px;
-}
-.nav-brand {
-  width: 40%;
-  vertical-align: middle;
-}
-.nav-links span {
-  display: inline-block;
-  padding: 0.25em 0.75em;
-  text-transform: uppercase;
-}
-.nav-links span:hover {
-  transform: scale(1.2);
-  background-color: #191923;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.header-details div h3 {
-  text-transform: uppercase;
-}
-.center-img img {
-  max-width: 400px;
-  aspect-ratio: 3/4;
-  border-radius: 200px;
-  object-fit: cover;
-  border: 20px solid grey;
-  border-style: inset;
-}
-.center-img .name {
-  font-family: Cinzel, serif;
-  font-size: 5em;
-  text-align: center;
-  bottom: 1em;
-  color: #fff;
-}
-
-/* ================================================================= */
-/* Knowledge section */
-
-/* ================================================================= */
-/* About section */
-
-/* ================================================================= */
-/* Work section */
-/* ================================================================= */
-/* Footer */
-footer div.h4 a {
-  border: 1px solid rgba(222, 196, 0, 0.5);
-  padding: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  margin: 5px;
-}
-footer div a i {
-  display: inline-block;
-  margin: auto;
-  vertical-align: middle;
-}
-footer div a:hover {
-  transform: scale(1.05);
-}
-footer div a:active {
-  box-shadow: none;
-  transform: translateY(3px);
-}
-@media screen and (max-width: 567px) {
-  header nav, .contact{
+/* =================================================================
+   =================================================================
+   GLOBAL MEDIA QUERIES
+*/
+@media (max-width: 576px) {
+  #about div .float-sm-start {
+    max-width: 400px;
+  }
+  header nav,
+  .contact {
     text-align: center;
     font-size: 13px;
   }
+  
   footer div.row div.h4 {
     text-align: center;
   }
   .project .pr-name {
     opacity: 0.8;
   }
-  
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .intro .row div:nth-child(2) {
     order: -1;
   }

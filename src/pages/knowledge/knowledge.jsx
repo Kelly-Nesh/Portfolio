@@ -1,4 +1,14 @@
 import "./knowledge.css";
+import bs from "/src/assets/icons/bs.png"
+import c from "/src/assets/icons/c.png"
+import css from "/src/assets/icons/css.png"
+import dj from "/src/assets/icons/dj.png"
+import html from "/src/assets/icons/html.png"
+import js from "/src/assets/icons/js.png"
+import mysql from "/src/assets/icons/mysql.png"
+import py from "/src/assets/icons/py.png"
+import rc from "/src/assets/icons/react.png"
+import wp from "/src/assets/icons/wp.png"
 
 export function Knowledge() {
   return (
@@ -10,7 +20,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/dj.png"
+                src={dj}
                 loading="lazy"
               ></img>
             </div>
@@ -29,7 +39,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/react.png"
+                src={rc}
                 loading="lazy"
               ></img>
             </div>
@@ -48,7 +58,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/html.png"
+                src={html}
                 loading="lazy"
               ></img>
             </div>
@@ -64,12 +74,12 @@ export function Knowledge() {
             <div className="d-flex">
               <img
                 className="icon"
-                src="assets/icons/css.png"
+                src={css}
                 loading="lazy"
               ></img>
               <img
                 className="icon align-self-center"
-                src="assets/icons/bs.png"
+                src={bs}
                 loading="lazy"
               ></img>
             </div>
@@ -87,7 +97,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/wp.png"
+                src={wp}
                 loading="lazy"
               ></img>
             </div>
@@ -108,7 +118,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/py.png"
+                src={py}
                 loading="lazy"
               ></img>
             </div>
@@ -127,7 +137,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/js.png"
+                src={js}
                 loading="lazy"
               ></img>
             </div>
@@ -145,7 +155,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/c.png"
+                src={c}
                 loading="lazy"
               ></img>
             </div>
@@ -162,7 +172,7 @@ export function Knowledge() {
             <div>
               <img
                 className="icon"
-                src="assets/icons/mysql.png"
+                src={mysql}
                 loading="lazy"
               ></img>
             </div>

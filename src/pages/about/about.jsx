@@ -1,21 +1,23 @@
 import "./about.css"
+import me2 from "/src/assets/me2.jpg"
+import { Divider } from "../../components/spacer_divider/divider";
 
 export function About() {
   return (
     <section id="about">
-      <div className="row justify-content-evenly">
-        <div className="col-sm-6 col-md-5 d-flex">
+      <div className="">
+        <div className="col-sm-6 col-md-5 d-flex float-sm-start me-sm-4">
           <div className="about heading">
             <h2 className="">About</h2>
             <h2>Kelly</h2>
           </div>
-          <div className="about pic">
-            <img src="assets/me2.jpg" alt="photo of kelly munene" />
+          <div className="about pic ">
+            <img src={me2} alt="photo of kelly munene" className="rounded-pill"/>
           </div>
         </div>
-        <hr className="divider d-md-none my-5" />
-        <div className="col-sm-6 c0l-md-5">
-          <p>Kelly Munene here, a software developer.</p>
+        <Divider className="d-sm-none" />
+        <div className="">
+          <p>Full name? Kelly Munene; Career? Software developer.</p>
           <p>
             Ever since I was little, I've been into computers. That early spark
             eventually blossomed into a love for coding late 2022. Now it's more
@@ -37,7 +39,6 @@ export function About() {
             you get back to finding the missing semicolon and unmatched
             parenthesis😂.
           </p>
-
           <p>
             Feel free to reach out if you have any project ideas or just wanna
             talk about coding (or memes!).
