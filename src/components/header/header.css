@@ -14,11 +14,11 @@ div.contact span a img.icon {
   display: inline-block;
   padding: 0.25em 0.75em;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 .nav-links span:hover {
-  transform: scale(1.1);
+  border-bottom: 2px solid var(--bs-info);
   border-radius: 5px;
-  transition: all 0.3s ease;
 }
 .header-details div h3 {
   text-transform: uppercase;
